@@ -6,6 +6,74 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <link rel="stylesheet" href="jemdoc.css" type="text/css" />
 <title>People</title>
+<style type="text/css">
+  .person-container {
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .person-photo {
+    display: table-cell;
+    width: 150px;
+    vertical-align: top;
+    padding-right: 20px;
+  }
+  .person-info {
+    display: table-cell;
+    vertical-align: top;
+  }
+  .person-photo img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+  }
+  .person-name {
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  .person-email {
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 10px;
+     
+  }
+.conf-pictures {
+  display: flex;
+  gap: 20px;  /* Increased gap */
+  margin: 20px 0;
+  justify-content: center; /* Center the pair */
+}
+
+.conf-pic {
+  flex: 0 1 auto; /* Don't grow, allow shrink */
+  width: 45%; /* Each takes nearly half */
+  text-align: center;
+}
+
+.conf-pic img {
+  width: 100%;
+  max-width: 500px; /* Double the previous size */
+  height: auto;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Responsive adjustment */
+@media (max-width: 768px) {
+  .conf-pictures {
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+  }
+  .conf-pic {
+    width: 90%;
+  }
+}
+</style>
 <!-- MathJax -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
 </script>
@@ -33,6 +101,70 @@ MathJax.Hub.Config({
 <div id="toptitle">
 <h1>Research Group</h1>
 </div>
+
+
+<!-- Person 1 -->
+<div class="person-container">
+  <div class="person-photo">
+    <img src="photos/Saman.jpg" alt="PhD Candidate 1" />
+    <div class="person-name">Saman Mazaheri Khamaneh</div>
+    <div class="person-role"> PhD Student</div>
+    <div class="person-email">saman.mazaherikhamaneh@ucf.edu</div>
+  </div>
+  <div class="person-info">
+    <p>Saman Mazaheri Khamaneh holds B.Sc. and M.Sc. degrees in Electrical Engineering from Islamic Azad University of Tabriz (2016) and the University of Tabriz (2019), Iran. Currently, she is a Ph.D. student in Electrical Engineering at the University of Central Florida.</p>
+    <p><strong>Research Interests:</strong> Critical aspects of modern power systems, focusing on enhancing resilience through reinforcement learning-based control strategies for power networks and the effective integration of energy storage within smart grids.</p>
+  </div>
+</div>
+
+<!-- Person 2 -->
+<div class="person-container">
+  <div class="person-photo">
+    <img src="photos/Sandy.jpg" alt="PhD Candidate 2" />
+    <div class="person-name">Sandy Miguel</div>
+    <div clas="person-role"> PhD Student</div>
+    <div class="person-email">sandy.miguel@ucf.edu</div>
+  </div>
+  <div class="person-info">
+    <p> Sandy Miguel accomplished her B.Sc from Princess Sumaya University of Technology in Electrical Power and Energy Engineering in 2024.</p>
+    <p><strong>Research Interests:</strong> Power system cybersecurity and resilience, leveraging graph-based machine learning and advanced grid simulations to address and mitigate emerging cyber threats.</p>
+  </div>
+</div>
+
+<!-- Person 3 -->
+<div class="person-container">
+  <div class="person-photo">
+    <img src="photos/Tayab.jpeg" alt="PhD Candidate 3" />
+    <div class="person-name">Tayab Uddin Wara</div>
+    <div class="person-role"> PhD Student</div>
+    <div class="person-email">tayabuddin.wara@ucf.edu</div>
+  </div>
+  <div class="person-info">
+    <P> Tayab Uddin Wara graduated B.Sc from BRAC University in Electrical and Electronic Engineering in 2024.</P>
+    <p><strong>Research Interests:</strong> Graph-based machine learning implementations for various power systems applications and optimizations, including EVs.</p>
+  </div>
+</div>
+
+
+
+  <div class="recent-pubs">
+    <h3>Recent Publication</h3>
+    <div class="conf-pictures">
+      <div class="conf-pic">
+        <img src="photos/Saman 2.jpg" alt="Conference Presentation 1" />
+      </div>
+      <div class="conf-pic">
+        <img src="photos/Saman 3.jpg" alt="Conference Presentation 2" />
+      </div>
+    </div>
+    <div class="pub-desc">
+      <p><strong>Title:</strong> "Robust Optimal Power Flow Against Adversarial Attacks: A Tri-Level Optimization Approach"<br>
+      <strong>Authors:</strong> SM Khamaneh, T Wu<br>
+      <strong>Conference:</strong> IEEE KPEC 2025</p>
+    </div>
+  </div>
+</div>
+
 </td>
 </tr>
 </table>
